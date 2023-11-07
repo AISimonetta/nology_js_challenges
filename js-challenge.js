@@ -29,10 +29,22 @@ getLargestNumber(2 ,1, 4); // returns 4
 getLargestNumber(6,2,3); // returns 6
 
 // Write a function that takes an array of names and returns the last name from the array of names.
-// getLastName([”Charlie”, “Rob”, “Andy”]); // returns “Andy”
-// getLastName(["Ash","Stu"]); // returns "Stu"
+
+let names = ["name1","name2","name3"]
+
+const getLastName = (names) => {
+    let lastName = names[names.length - 1];
+
+    console.log(lastName)
+}
+
+getLastName(["Charlie", "Rob", "Andy"]); // returns “Andy”
+getLastName(["Ash","Stu"]); // returns "Stu"
 
 
-// Write a function that takes an array of numbers and returns true if all of the numbers are positive. It should return false if there are one or more negative numbers in the array.
+// Write a function that takes an array of numbers and returns true if all of the numbers are positive. 
+//It should return false if there are one or more negative numbers in the array.
+
+
 // allNumbersPositive([2,4,5]); // returns true
 // allNumbersPositive([-5,4,6]); // returns false
