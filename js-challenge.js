@@ -45,15 +45,60 @@ getLastName(["Ash","Stu"]); // returns "Stu"
 // Write a function that takes an array of numbers and returns true if all of the numbers are positive. 
 //It should return false if there are one or more negative numbers in the array.
 
-let array = []
+// let array = []
+// const allNumbersPositive = (array) => {
+//     for(var i = 0; i < array.length; i++){
+//         if(array[i] < 0){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// let array = [];
+// const allNumbersPositive = () => {
+//     array.forEach(element => {
+        
+//     });
+// }
+
+// const allNumbersPositive = (arr) => {
+//     arr.forEach((item) => {
+//       if (arr[item] >= 0) {
+//        console.log (true);
+//       } else {
+//         console.log (false);
+//     }
+//     });
+//   };
+
+
+// const allNumbersPositive = (array) => {
+//     for(var i = 0; i < array.length; i++){
+//         if(array[i] >= 1){
+//             console.log(true);
+//         } else {
+//             console.log(false);
+//         }
+//     }
+//}
+
+// const allNumbersPositive = (num1, num2, num3) => {
+//     if ((num1 >= 1) && (num2 >= 1) && (num3 >= 1)) {
+//         console.log(true)
+//     } else {
+//         console.log(false)
+//     }
+// }
+
 const allNumbersPositive = (array) => {
     for(var i = 0; i < array.length; i++){
-        if(array[i] < 0){
-            return false;
+        if(array[i] >= 1){
+            console.log(true);
+        } else {
+            console.log(false);
         }
     }
-    return true;
 }
-
 allNumbersPositive([2,4,5]); // returns true
 allNumbersPositive([-5,4,6]); // returns false
